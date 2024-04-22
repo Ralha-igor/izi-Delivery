@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro/Login</title>
+  </head>
+  <body>
+    <header>
+        <section>
+     <center><h1>Cadastro</h1>
+    
+    
+            <a href="#" class="logo">
+            <img src="Logo Coffe.jpg" alt="logo" width="60" height="60">
+            </a>
+    </section></center>
+    <!--lista nao ordenada-->
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html#home">home</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#abount"> Sobre</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#Contatos">contato</a></li>
+      </ul>
+    </nav>
+</header>
+    <main>
+      
+      <section>
+        <!--Padrao do elemente form, quando nao existe a definição de action é que, quando enviado o formulario "ira" para a mesma pagina 
+                 ex: <form action="post">, 
+                 <form method="post"> -->
+        <!-- POST enviada dados para o servidor  no corpo da solicitação -->
+        <!--GET parametros sao passados pela URL, sao visiveis na barra de endereço-->
+        <form method="post">
+          
+          <!--fieldset cria uma "caixinha" para delimitar campos em comum-->
+          <!--legend cria uma legenda para especificar quais sao esses "campus em comum "-->
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Endereço</label>
+            <br /><br />
+            <section>
+                <h2>Preencha o Formulario de Login</h2>
+                <p> </p>
+                
+              </section>
+              <label>Nome:</label>
+          <input type="text" name="nome" id="nome" />
+          <br /><br />
+          <label>Email</label>
+          <input type="email" name="email" id="email" />
+          
+            <br />
+            <label> Estados: </label>
+            <!--O select cria uma lista de opcoes para o usuario escolher, ele é vantajoso quando queremos limitar quais resposta serao dadas para certo campos.
+                        É possivel agrupar opcoes (options) por meio do elemnto optgroup, ele cria uma etiqueta para definir elementos em comum-->
+            
+            <br /><br />
+
+            <
+            
+            />
+            <!--input tipo numero (number) pode ser utilizado em conjunto  com o atributo step, que define a variação desse numero (passo),
+                    o atributo (min) defini o menor valor aceito naquele input e o (Max) que define o maior valor para aquele input -->
+            <br /><br />
+
+            <label> Data: </label>&nbsp
+            <input type="date" name="data" id="data" />
+
+            <br /><br />
+
+            <label>Cidade</label>
+            <input list="cidades" name="cidade" id="cidade" />
+            <datalist id="cidades">
+              <option value="Araraquara"></option>
+              <option value="São Carlos"></option>
+              <option value="Ibaté"></option>
+            </datalist>
+            <br><br>
+            <br>
+            <center><label>Coloque uma Observação:</label>
+            <br /><br />
+            <textarea
+              name="endereço"
+              id="endereço"
+              cols="80"
+              rows="5"
+            ></textarea>
+            <br /><br />
+        </center>
+          </fieldset>
+
+
+          
+          <center>
+            <input type="submit" value="Enviar" />
+          </center>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <center>&copy; Formulario de Envio</center>
+    </footer>
+  </body>
+</html>
